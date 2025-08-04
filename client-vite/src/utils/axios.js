@@ -1,8 +1,8 @@
-// src/utils/axios.js
 import axios from "axios";
 
-const instance = axios.create({
-  baseURL: "http://localhost:5000", // or your deployed Render URL
+const API = axios.create({
+  baseURL: import.meta.env.VITE_API_BASE_URL,
+  withCredentials: true,
 });
 
-export default instance;
+export default API;
