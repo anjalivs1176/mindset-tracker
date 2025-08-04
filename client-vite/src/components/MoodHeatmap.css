@@ -1,0 +1,19 @@
+.color-empty {
+  fill: #eee;
+}
+
+.color-happy {
+  fill: #fde047; /* yellow */
+}
+
+.color-sad {
+  fill: #93c5fd; /* blue */
+}
+
+.color-angry {
+  fill: #fca5a5; /* red */
+}
+
+.color-neutral {
+  fill: #d1d5db; /* gray */
+}
