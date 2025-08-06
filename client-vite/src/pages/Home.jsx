@@ -5,6 +5,13 @@ import axios from "axios";
 import AffirmationPopup from "../components/AffirmationPopup";
 import API from "../services/api";
 
+const defaultAffirmations = [
+  "Today is a fresh start — embrace it.",
+  "You are doing better than you think.",
+  "Your mindset is your greatest strength.",
+  "Each small step matters.",
+  "Peace begins with a deep breath.",
+];
 
 const Home = () => {
   const navigate = useNavigate();
@@ -22,8 +29,6 @@ const Home = () => {
       const token = localStorage.getItem("token");
 
       const journalRes = await API.get("/journals");
-
-
       console.log("Journal response:", journalRes.data);
 
       if (!Array.isArray(journalRes.data)) {
@@ -38,7 +43,8 @@ const Home = () => {
       console.log("Latest mood:", latestMood);
 
       if (!latestMood) {
-        setAffirmation("No mood data found yet.");
+        const randomIndex = Math.floor(Math.random() * defaultAffirmations.length);
+        setAffirmation(defaultAffirmations[randomIndex]);
         setLoading(false);
         return;
       }
@@ -49,7 +55,8 @@ const Home = () => {
       setAffirmation(affRes.data.affirmation || "No affirmation found.");
     } catch (error) {
       console.error("Error fetching affirmation:", error);
-      setAffirmation("Unable to load affirmation.");
+      const randomIndex = Math.floor(Math.random() * defaultAffirmations.length);
+      setAffirmation(defaultAffirmations[randomIndex]);
     } finally {
       setLoading(false);
     }
