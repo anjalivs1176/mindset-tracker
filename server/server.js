@@ -10,7 +10,7 @@ const app = express();
 
 // ✅ FIXED CORS CONFIG
 app.use(cors({
-  origin: "https://self-reflection-journal.netlify.app",
+  origin: ["http://localhost:5173","https://self-reflection-journal.netlify.app"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
 }));
