@@ -11,8 +11,6 @@ const Register = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  console.log("ENV →", import.meta.env.VITE_API_BASE_URL);
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
