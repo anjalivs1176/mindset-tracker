@@ -32,5 +32,10 @@ app.use("/api/journals", journalRoutes);
 const affirmationRoutes = require("./routes/affirmationRoutes");
 app.use("/api/affirmation", affirmationRoutes);
 
+
+const passwordResetRoutes = require("./routes/passwordReset");
+app.use("/api/password", passwordResetRoutes);
+
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

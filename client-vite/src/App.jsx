@@ -9,6 +9,9 @@ import Journal from "./pages/Journal";
 import JournalEntries from "./pages/JournalEntries";
 import Analytics from "./pages/Analytics";
 import MoodStatsPage from "./pages/MoodStatsPage";
+import ForgotPassword from "./pages/ForgotPassword";
+import ResetPassword from "./pages/ResetPassword";
+
 
 function App() {
   return (
@@ -35,6 +38,10 @@ function App() {
     <Route path="/login" element={<Login />} />
     <Route path="/register" element={<Register />} />
     <Route path="/mood-stats" element={<MoodStatsPage />} />
+
+    <Route path="/forgot-password" element={<ForgotPassword />} />
+    <Route path="/reset-password/:token" element={<ResetPassword />} />
+
 
   </Routes>
   );
