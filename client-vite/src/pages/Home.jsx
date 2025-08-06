@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import AffirmationPopup from "../components/AffirmationPopup";
+import API from "../services/api";
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -19,11 +21,8 @@ const Home = () => {
       setLoading(true);
       const token = localStorage.getItem("token");
 
-      const journalRes = await axios.get("/api/journals", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const journalRes = await API.get("/journals");
+
 
       console.log("Journal response:", journalRes.data);
 
@@ -44,7 +43,7 @@ const Home = () => {
         return;
       }
 
-      const affRes = await axios.get(`/api/affirmation?mood=${latestMood}`);
+      const affRes = await API.get(`/affirmation?mood=${latestMood}`);
       console.log("Affirmation response:", affRes.data);
 
       setAffirmation(affRes.data.affirmation || "No affirmation found.");
