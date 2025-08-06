@@ -1,8 +1,8 @@
 import axios from "axios";
 
-// 👇 this sets the base URL for all your API requests
+// 👇 this sets the base URL from your .env or .env.production file
 const API = axios.create({
-  baseURL: "http://localhost:5000/api", // local backend
+  baseURL: import.meta.env.VITE_API_BASE_URL,
 });
 
 // 👇 this sends token with each request
