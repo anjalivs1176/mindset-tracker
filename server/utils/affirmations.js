@@ -265,3 +265,4 @@ function getRandomAffirmation(mood) {
 }
 
 module.exports = { getRandomAffirmation };
+
