@@ -7,7 +7,7 @@ A full-stack app to track your mood, reflect daily, and stay positive with affir
 - Add/Edit/Delete Journal Entries
 - Mood-based Affirmations
 - Mood Analytics (Average, Streak, Most Common)
-- Responsive Design with Dark Mode
+
 
 ## 🛠️ Built With
 - React + Tailwind CSS + Framer Motion
