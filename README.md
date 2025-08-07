@@ -24,9 +24,8 @@ A full-stack self-reflection and mental wellness tracker that helps users log th
 
 ## 📸 Screenshots
 
-| Login | Dashboard | Mood Analytics |
-|-------|-----------|----------------|
-| <img width="288" height="254" alt="image" src="https://github.com/user-attachments/assets/d88209fd-f71a-4495-a669-78a763472716" />
+
+| <img width="488" height="454" alt="image" src="https://github.com/user-attachments/assets/d88209fd-f71a-4495-a669-78a763472716" />
  | <img width="873" height="531" alt="image" src="https://github.com/user-attachments/assets/bf28c429-b246-4500-a727-5bc57be07a77" />
  <img width="1144" height="584" alt="image" src="https://github.com/user-attachments/assets/8381f590-4201-4c7d-9e00-d1a4bb19cecc" />
 <img width="894" height="607" alt="image" src="https://github.com/user-attachments/assets/546c13ef-ec63-4c34-90a8-c1901eea4268" />
