@@ -1,4 +1,3 @@
-// src/pages/Login.jsx
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../services/authService";
@@ -60,6 +59,16 @@ const Login = () => {
             >
               {showPassword ? <AiFillEyeInvisible size={20} /> : <AiFillEye size={20} />}
             </span>
+          </div>
+
+          {/* Forgot Password Link */}
+          <div className="text-right">
+            <Link
+              to="/forgot-password"
+              className="text-sm text-purple-600 hover:underline"
+            >
+              Forgot Password?
+            </Link>
           </div>
 
           <button
